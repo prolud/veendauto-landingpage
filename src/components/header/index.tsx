@@ -13,9 +13,11 @@ export default function Header() {
         <li><a href="#about-us">Sobre nós</a></li>
       </Navbar>
 
-      <BotaoFaleConosoco>
-        Fale conosco
-      </BotaoFaleConosoco>
+      <a target="_blank" href="https://wa.me/554197801223">
+        <BotaoFaleConosoco>
+          Fale conosco
+        </BotaoFaleConosoco>
+      </a>
 
     </HeaderComponent>
   )
