@@ -1,5 +1,11 @@
+import { GlobalStyles } from "./global/styles";
+import Router from "./pages/router";
+
 export default function App() {
   return (
-    <h1>Hello</h1>
+    <>
+      <GlobalStyles />
+      <Router />
+    </>
   )
 }
