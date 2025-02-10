@@ -6,11 +6,13 @@ import Casal from "../../components/casal";
 import RedirectToForm from "../../components/redirect-to-form";
 import Footer from "../../components/footer";
 import WhatsappFloatingButton from "../../components/whatsapp-floating-button";
+import Success from "../../components/success";
 
 export default function Home() {
   return (
     <main>
       <WhatsappFloatingButton/>
+      <Success/>
       
       <Header />
       <Banner />

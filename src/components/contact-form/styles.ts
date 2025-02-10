@@ -64,7 +64,7 @@ export const FormDivider = styled.div`
     gap: 0.625rem;
     display: flex;
     align-items: start;
-    z-index: 999;
+    z-index: 99;
 
     input[type=text], input[type=tel], input[type=email], textarea {
       width: 100%;
@@ -80,7 +80,7 @@ export const FormDivider = styled.div`
       color: white;
       background-color: ${theme.colors.purple};
       min-height: 3rem;
-      width: 5rem;
+      width: 8rem;
       
       &:hover {
         background-color: ${theme.colors.purpleDarker};

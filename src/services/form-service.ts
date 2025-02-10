@@ -1,20 +1,6 @@
-import axios from "axios";
 import { IFormData } from "../components/contact-form";
 
-const googleApi = axios.create(
-  {
-    baseURL: import.meta.env.VITE_FORMAPI
-  }
-)
-
 export const answerForm = async (formData: IFormData, setSubmitting: (state: boolean) => void) => {
-  // googleApi.post("/exec", formData,
-  //   {
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //   }
-  // )
   setSubmitting(true)
   await fetch(import.meta.env.VITE_FORMAPI,
     {
@@ -25,5 +11,14 @@ export const answerForm = async (formData: IFormData, setSubmitting: (state: boo
       body: (`nome=${formData.nome}&telefone=${formData.telefone}&cidade=${formData.cidade}&email=${formData.email}&informacoes=${formData.informacoes}&desejaVender=${formData.desejaVender}`)
     }
   )
-    .then(() => setSubmitting(false))
+    .then(
+      () => {
+        const form = document.getElementById("form-contact") as HTMLFormElement
+        form.reset()
+        setSubmitting(false)
+        const submmitDialog = document.getElementById("form-submitted-success") as HTMLDialogElement
+        submmitDialog.open = true
+        setTimeout(() => { submmitDialog.open = false }, 5000)
+      }
+    )
 }
