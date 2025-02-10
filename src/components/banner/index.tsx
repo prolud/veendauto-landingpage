@@ -9,7 +9,7 @@ import Money4 from "../../assets/money/money-4.png"
 
 export default function Banner() {
   return (
-    <BannerComponent>
+    <BannerComponent id="home">
 
       <img className="money-1" src={Money1} alt="Nota de cem reais." />
       <img className="money-2" src={Money2} alt="Nota de cem reais." />

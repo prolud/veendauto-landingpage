@@ -5,7 +5,7 @@ import QualityImage from "../../assets/QualityImage.svg"
 
 export default function OurServices() {
   return (
-    <OurServicesSection>
+    <OurServicesSection id="services">
       <h1 id="section-servicos">Vamos fazer negócio?</h1>
 
       <BlocksContainer>

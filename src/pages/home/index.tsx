@@ -9,11 +9,27 @@ import WhatsappFloatingButton from "../../components/whatsapp-floating-button";
 import Success from "../../components/success";
 
 export default function Home() {
+  
+  const scrollHandler = () => {
+    const headerElement = document.getElementById("header") as HTMLElement
+    console.log(window.scrollY)
+    
+    
+    if (window.scrollY === 0) {
+      headerElement.classList.remove("with-bg")
+    }
+    else {
+      headerElement.classList.add("with-bg")
+    }
+  }
+
+  window.addEventListener("scroll", scrollHandler)
+
   return (
     <main>
-      <WhatsappFloatingButton/>
-      <Success/>
-      
+      <WhatsappFloatingButton />
+      <Success />
+
       <Header />
       <Banner />
       <OurServices />

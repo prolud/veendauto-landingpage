@@ -43,7 +43,7 @@ export const BannerComponent = styled.section`
   }
   
   @media screen and (max-width: 84rem) {
-    padding: 2rem 1rem;
+    padding: 7rem 1rem 2rem;
     flex-direction: column;
     gap: 2rem;
     img.homem-com-carro {

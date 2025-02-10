@@ -5,11 +5,17 @@ export const HeaderComponent = styled.header`
   width: 100%;
   padding: 1.125rem 9rem;
   color: white;
-  background-color: ${theme.colors.purple};
+  background-color: transparent;
+
+  &.with-bg {
+    background-color: ${theme.colors.purple};
+  }
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 999;
 
   @media screen and (max-width: 48rem) {
     justify-content: center;
