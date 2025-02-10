@@ -4,7 +4,7 @@ import { theme } from "../../global/styles";
 export const WhatsappButton = styled.button`
   position: fixed;
 
-  bottom: 2.5rem;
+  bottom: 7rem;
   right: 2.5rem;
   
   z-index: 999;

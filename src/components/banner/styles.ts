@@ -9,25 +9,33 @@ export const BannerComponent = styled.section`
   gap: 6rem ;
   position: relative;
 
-  .circles-symbol {
+  .money-1 {
+    width: 10rem;
     position: absolute;
-    top: 6rem;
+    top: 2rem;
     left: 6rem;
+    filter: blur(2px);
   }
-  .plus-symbol {
+  .money-2 {
+    width: 10rem;
     position: absolute;
-    top: 6rem;
+    top: 2rem;
     right: 6rem;
+    filter: blur(5px);
   }
-  .triangules-symbol {
+  .money-3 {
+    width: 10rem;
     position: absolute;
-    bottom: 6rem;
-    left: 6rem;
+    bottom: 2rem;
+    left: 2rem;
+    filter: blur(.4px);
   }
-  .zigzag-symbol {
+  .money-4 {
+    width: 10rem;
     position: absolute;
-    bottom: 6rem;
-    right: 6rem;
+    bottom: 2rem;
+    right: 1rem;
+    filter: blur(.4px);
   }
 
   img.homem-com-carro {
@@ -42,23 +50,25 @@ export const BannerComponent = styled.section`
       width: 20rem;
     }
 
-    .circles-symbol {
-    top: -2rem;
-    left: -1rem;
-  }
-  .plus-symbol {
-    top: -2rem;
-    right: -1rem;
-    transform: rotate(-10deg);
-  }
-  .triangules-symbol {
-    bottom: 1rem;
-    left: 1rem;
-  }
-  .zigzag-symbol {
-    bottom: 1rem;
-    right: 1rem;
-  }
+    .money-1 {
+      top: -2rem;
+      left: -1rem;
+    }
+    .money-2 {
+      top: -2rem;
+      right: -1rem;
+    }
+    .money-3 {
+      bottom: 1rem;
+      left: -7rem;
+      transform: rotate(90deg);
+      filter: blur(3px);
+    }
+    .money-4 {
+      bottom: 1rem;
+      right: -5rem;
+      filter: blur(3px);
+    }
   }
 
   transition: all .3s;
@@ -79,8 +89,8 @@ export const TextsContent = styled.div`
   }
 
   h1 {
-    font-size: 3rem;
-    line-height : 3rem;
+    font-size: 4rem;
+    line-height : 4rem;
   }
 
   button {

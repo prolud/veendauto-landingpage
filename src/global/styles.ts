@@ -24,6 +24,10 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${theme.colors.purple};
     overflow-x: hidden;
   }
+  
+  img {
+    pointer-events: none;
+  }
 
   button {
     border-radius: 8px;
