@@ -3,10 +3,16 @@ import { theme } from "../../global/styles";
 
 export const RedirectSection = styled.section`
   display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: ${theme.colors.purpleDarker};
+`;
+
+export const Redirect = styled.div`
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem 1rem;
-  background-color: ${theme.colors.purpleDarker};
   gap: 2rem;
 
   h1 {
@@ -38,5 +44,62 @@ export const RedirectSection = styled.section`
   @media screen and (max-width: 1300px) {
     text-align: center;
     flex-direction: column;
+  }
+`;
+
+export const Chamada = styled.div`
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+
+
+  img {
+    width: 28.875rem;
+  }
+  
+  .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+    h1 {
+      text-align: center;
+      max-width: 40rem;
+      font-size: 3rem;
+      
+      strong {
+        color: ${theme.colors.orange};
+      }
+    }
+
+    ul {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      list-style: none;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+
+        strong {
+          color: ${theme.colors.greenWhatsapp};
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 22rem;
+    }
   }
 `;

@@ -5,7 +5,8 @@ export const BannerComponent = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
   gap: 6rem ;
   position: relative;
 

@@ -6,7 +6,7 @@ export const ContactFormContent = styled.section`
   flex-direction: column;
   align-items: center;
   background-color: white;
-  gap: 2rem;
+  gap: 4rem;
   padding: 4rem 9rem;
   text-align: center;
   
@@ -14,9 +14,69 @@ export const ContactFormContent = styled.section`
     font-size: 3rem;
     line-height: 3rem;
   }
+
+  strong {
+    color: ${theme.colors.greenWhatsapp};
+    font-weight: 700;
+  }
   
   @media screen and (max-width: 1300px) {
     padding: 4rem 1rem;
+  }
+`;
+
+export const OkSpan = styled.span`
+  background-color: ${theme.colors.greenWhatsapp};
+  height: 2rem;
+  width: 2rem;
+  display: block;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: .75rem;
+    transition: .15s;
+  }
+`;
+
+export const Diferenciais = styled.div`
+  h2 {
+    max-width: 35rem;
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+`;
+
+export const DiferenciaisDivider = styled.ul`
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  li {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    max-width: 30rem;
+    cursor: default;
+
+    &:hover {
+      img {
+        height: 1.25rem;
+        filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .1));
+      }
+    }
   }
 `;
 
@@ -25,7 +85,12 @@ export const FormDivider = styled.div`
   gap: 8rem;
   width: 100%;
   position: relative;
+  align-items: center;
 
+  .car-form-image {
+    height: auto;
+    width: 26.9375rem;
+  }
   .moeda-1 {
     position: absolute;
     width: 10rem;
@@ -83,7 +148,7 @@ export const FormDivider = styled.div`
       width: 8rem;
       
       &:hover {
-        background-color: ${theme.colors.purpleDarker};
+        background-color: ${theme.colors.purpleHover};
       }
 
       transition: .15s;
@@ -105,4 +170,5 @@ export const CheckboxContainer = styled.label`
   display: flex;
   gap: .4rem;
   color: ${theme.colors.black};
+  align-items: center;
 `;

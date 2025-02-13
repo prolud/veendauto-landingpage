@@ -1,5 +1,5 @@
 import { BannerComponent, TextsContent } from "./styles";
-import HomemBanner from "../../assets/homem-banner.svg"
+import HomemBanner from "../../assets/homem-banner.png"
 
 import Money1 from "../../assets/money/money-1.png"
 import Money2 from "../../assets/money/money-2.png"
@@ -11,10 +11,10 @@ export default function Banner() {
   return (
     <BannerComponent id="home">
 
-      <img className="money-1" src={Money1} alt="Nota de cem reais." />
-      <img className="money-2" src={Money2} alt="Nota de cem reais." />
-      <img className="money-3" src={Money3} alt="Nota de cem reais." />
-      <img className="money-4" src={Money4} alt="Nota de cem reais." />
+      <img className="money-1" src={Money1} alt="Nota de cem reais." loading="eager"/>
+      <img className="money-2" src={Money2} alt="Nota de cem reais." loading="eager"/>
+      <img className="money-3" src={Money3} alt="Nota de cem reais." loading="eager"/>
+      <img className="money-4" src={Money4} alt="Nota de cem reais." loading="eager"/>
 
       <TextsContent>
         <div className="texts">
@@ -26,7 +26,7 @@ export default function Banner() {
         </a>
       </TextsContent>
 
-      <img className="homem-com-carro" src={HomemBanner} alt="Homem apontando para um carro." />
+      <img className="homem-com-carro" src={HomemBanner} alt="Homem apontando para um carro." loading="eager" />
 
     </BannerComponent>
   )

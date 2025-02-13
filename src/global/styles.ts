@@ -1,8 +1,11 @@
+
 import { createGlobalStyle } from "styled-components";
 
 export const theme = {
   colors: {
     purple: "#65267A",
+    purpleHover: "#A13CC3",
+    purpleMedium: "#81309C",
     purpleDarker: "#391645",
     orange: "#F84E06",
     orangeHover: "#f9611f",
@@ -16,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    scroll-behavior: smooth;
     font-family: roboto, sans-serif;
   }
 

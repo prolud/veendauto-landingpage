@@ -12,7 +12,7 @@ export default function Header() {
         <li><a href="#services">Serviços</a></li>
       </Navbar>
 
-      <a target="_blank" href="https://wa.me/554197801223">
+      <a target="_blank" href="https://wa.me/5541984728328">
         <BotaoFaleConosoco>
           Fale conosco
         </BotaoFaleConosoco>

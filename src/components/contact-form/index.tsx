@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { CheckboxContainer, ContactFormContent, FormDivider } from "./styles";
-import CarForm from "../../assets/car-form.svg"
+import { CheckboxContainer, ContactFormContent, Diferenciais, DiferenciaisDivider, FormDivider, OkSpan } from "./styles";
+import CarForm from "../../assets/car-form.png"
 import Loader from "../../assets/loader.svg"
 
 import Coin1 from "../../assets/coins/coin-1.png"
@@ -9,6 +9,8 @@ import Coin3 from "../../assets/coins/coin-3.png"
 import Coin4 from "../../assets/coins/coin-4.png"
 import MassoDinheiro from "../../assets/money/money-5.png"
 import { answerForm } from "../../services/form-service";
+
+import Check from "../../assets/check.svg"
 
 export interface IFormData {
   nome: string;
@@ -62,7 +64,7 @@ export default function ContactForm() {
         <img className="moeda-4" src={Coin4} alt="Moeda dourada." />
         <img className="masso-dinheiro" src={MassoDinheiro} alt="Masso de notas de cem." />
 
-        <img src={CarForm} alt="Imagem de um carro." />
+        <img className="car-form-image" src={CarForm} alt="Imagem de um carro." />
 
         <form id="form-contact" onSubmit={handleSubmit}>
           <input
@@ -118,7 +120,7 @@ export default function ContactForm() {
             {
               submitting ?
                 (
-                  <img src={Loader} alt="Carregando..." />
+                  <img src={Loader} alt="Carregando..." loading="lazy" />
                 )
                 :
                 (
@@ -130,6 +132,31 @@ export default function ContactForm() {
         </form>
 
       </FormDivider>
+
+      <Diferenciais>
+        <h2>Na Veendauto, compramos seu carro de forma <strong>segura</strong>, sem complicações e com pagamento imediato via <strong>PIX</strong>.</h2>
+
+        <DiferenciaisDivider>
+          <li>
+            <OkSpan>
+              <img src={Check} alt="Check image." />
+            </OkSpan>
+            <p>Avaliação rápida</p>
+          </li>
+          <li>
+            <OkSpan>
+              <img src={Check} alt="Check image." />
+            </OkSpan>
+            <p>Dinheiro na hora</p>
+          </li>
+          <li>
+            <OkSpan>
+              <img src={Check} alt="Check image." />
+            </OkSpan>
+            <p>Oferta justa</p>
+          </li>
+        </DiferenciaisDivider>
+      </Diferenciais>
     </ContactFormContent>
   )
 }

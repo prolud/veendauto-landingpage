@@ -6,7 +6,7 @@ export default function Footer() {
     <FooterSection>
 
       <Line/>
-      <img src={GrayLogo} alt="Logo da Veendauto." />
+      <img src={GrayLogo} alt="Logo da Veendauto." loading="lazy" />
       <Line/>
 
     </FooterSection>
