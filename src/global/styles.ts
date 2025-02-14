@@ -11,6 +11,7 @@ export const theme = {
     orangeHover: "#f9611f",
     black: "#121212",
     greenWhatsapp: "#25D366",
+    greenWhatsappHover: "#1fad53",
   }
 }
 

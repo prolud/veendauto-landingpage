@@ -3,10 +3,6 @@ import { CheckboxContainer, ContactFormContent, Diferenciais, DiferenciaisDivide
 import CarForm from "../../assets/car-form.png"
 import Loader from "../../assets/loader.svg"
 
-import Coin1 from "../../assets/coins/coin-1.png"
-import Coin2 from "../../assets/coins/coin-2.png"
-import Coin3 from "../../assets/coins/coin-3.png"
-import Coin4 from "../../assets/coins/coin-4.png"
 import MassoDinheiro from "../../assets/money/money-5.png"
 import { answerForm } from "../../services/form-service";
 
@@ -58,10 +54,6 @@ export default function ContactForm() {
 
       <FormDivider>
 
-        <img className="moeda-1" src={Coin1} alt="Moeda dourada." />
-        <img className="moeda-2" src={Coin2} alt="Moeda dourada." />
-        <img className="moeda-3" src={Coin3} alt="Moeda dourada." />
-        <img className="moeda-4" src={Coin4} alt="Moeda dourada." />
         <img className="masso-dinheiro" src={MassoDinheiro} alt="Masso de notas de cem." />
 
         <img className="car-form-image" src={CarForm} alt="Imagem de um carro." />

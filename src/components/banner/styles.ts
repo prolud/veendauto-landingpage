@@ -40,7 +40,7 @@ export const BannerComponent = styled.section`
   }
 
   img.homem-com-carro {
-    filter: drop-shadow(100px -60px 100px rgba(92, 22, 255, 0.33));
+    filter: drop-shadow(100px -60px 100px rgba(157, 116, 255, 0.33));
   }
   
   @media screen and (max-width: 84rem) {
@@ -81,7 +81,7 @@ export const TextsContent = styled.div`
   color: white;
   max-width: 26.6875rem;
   gap: 3rem;
-  filter: drop-shadow(-120px -70px 70px rgb(255, 67, 246));
+  filter: drop-shadow(-120px -70px 70px rgb(255, 116, 248));
 
   .texts {
     display: flex;
@@ -91,17 +91,33 @@ export const TextsContent = styled.div`
 
   h1 {
     font-size: 4rem;
-    line-height : 4rem;
+    line-height: 4rem;
+    font-style: italic; 
+  }
+
+  a {
+    text-decoration: none;
   }
 
   button {
     width: 100%;
     color: white;
-    background-color: ${theme.colors.orange};
+    background-color: ${theme.colors.greenWhatsapp};
     transition: .15s;
+    font-style: italic;
+    display: flex;
+    font-size: 1.5rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    
+    @media screen and (max-width: 1000px){
+      font-size: 1.2rem;
+    }
     
     &:hover {
-      background-color: ${theme.colors.orangeHover};
+      background-color: ${theme.colors.greenWhatsappHover};
     }
   }
 

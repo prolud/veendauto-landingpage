@@ -13,6 +13,10 @@ export const ContactFormContent = styled.section`
   h1 {
     font-size: 3rem;
     line-height: 3rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.5rem;
+    }
   }
 
   strong {
@@ -90,30 +94,6 @@ export const FormDivider = styled.div`
   .car-form-image {
     height: auto;
     width: 26.9375rem;
-  }
-  .moeda-1 {
-    position: absolute;
-    width: 10rem;
-    top: 0;
-    right: 0;
-  }
-  .moeda-2 {
-    position: absolute;
-    width: 10rem;
-    top: 4rem;
-    right: 10rem;
-  }
-  .moeda-3 {
-    position: absolute;
-    width: 10rem;
-    top: 2rem;
-    right: 20rem;
-  }
-  .moeda-4 {
-    position: absolute;
-    width: 10rem;
-    top: 10rem;
-    right: 25rem;
   }
   .masso-dinheiro {
     position: absolute;

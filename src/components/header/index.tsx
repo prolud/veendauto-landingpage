@@ -1,20 +1,21 @@
-import { BotaoFaleConosoco, HeaderComponent, Navbar } from "./styles";
+import { BotaoFaleConosoco, HeaderComponent, Logos } from "./styles";
 import logo from "../../assets/logo-orange.svg"
+import logoMenor from "../../assets/logo-orange-minor.png"
+import whatsappLogo from "../../assets/logo-whatsapp-floating.svg"
 
 export default function Header() {
   return (
     <HeaderComponent id="header">
 
-      <img src={logo} alt="Logo Veendauto." />
-
-      <Navbar>
-        <li><a href="#home">Início</a></li>
-        <li><a href="#services">Serviços</a></li>
-      </Navbar>
+      <Logos>
+        <img src={logoMenor} alt="Logo Veendauto menor." />
+        <img src={logo} alt="Logo Veendauto." />
+      </Logos>
 
       <a target="_blank" href="https://wa.me/5541984728328">
         <BotaoFaleConosoco>
-          Fale conosco
+          <img src={whatsappLogo} alt="Logo do WhatsApp" />
+          <p>FALE CONOSCO</p>
         </BotaoFaleConosoco>
       </a>
 

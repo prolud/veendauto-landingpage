@@ -5,11 +5,8 @@ export const HeaderComponent = styled.header`
   width: 100%;
   padding: 1.125rem 9rem;
   color: white;
-  background-color: transparent;
-
-  &.with-bg {
-    background-color: ${theme.colors.purple};
-  }
+  background-color: ${theme.colors.purple};
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, .4));
 
   display: flex;
   justify-content: space-between;
@@ -17,43 +14,54 @@ export const HeaderComponent = styled.header`
   position: fixed;
   z-index: 999;
 
+  a {
+    text-decoration: none;
+  }
+
   @media screen and (max-width: 48rem) {
-    justify-content: center;
+    /* justify-content: center; */
+    padding: 1.125rem 1rem;
   }
 
   transition: .3s;
 `;
 
-export const Navbar = styled.ul`
-  list-style: none;
+export const Logos = styled.div`
   display: flex;
-  gap: 2.5rem;
+  gap: 1rem;
+  align-items: center;
 
-  a {
-    text-decoration: none;
-    color: white;
+  
+  img {
+    height: 3rem;
   }
-
-  @media screen and (max-width: 68.75rem) {
-    display: none;
+  @media screen and (max-width: 1300px) {
+    gap: .8rem;
+    
+    img {
+      height: 1.5rem;
+    }
   }
-
-  transition: .15s;
 `;
 
 export const BotaoFaleConosoco = styled.button`
-  background-color: transparent;
-  border: 1px solid white;
+  display: flex;
+  gap: .8rem;
+  align-items: center;
+  background-color: ${theme.colors.greenWhatsapp};
   color: white;
+  font-weight: bold;
   transition: .15s;
-  width: 9.8125rem;
+  font-size: 1.5rem;
+  font-style: italic;
   
   &:hover {
-    background-color: white;
-    color: ${theme.colors.black};
+    background-color: ${theme.colors.greenWhatsappHover};
   }
 
-  @media screen and (max-width: 48rem) {
-    display: none;
+  @media screen and (max-width: 1000px) {
+    p {
+      display: none;
+    }
   }
 `;

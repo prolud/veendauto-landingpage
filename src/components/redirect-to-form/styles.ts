@@ -6,45 +6,8 @@ export const RedirectSection = styled.section`
   flex-direction: column;
   gap: 3rem;
   background-color: ${theme.colors.purpleDarker};
-`;
-
-export const Redirect = styled.div`
-  display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 2rem 1rem;
-  gap: 2rem;
-
-  h1 {
-    color: white;
-    line-height: 2.5rem;
-    font-size: 2.5rem;
-    font-family: 'Sarala';
-    max-width: 20rem;
-  }
-  
-  button {
-    
-    background-color: ${theme.colors.orange};
-    &:hover {
-      background-color: ${theme.colors.orangeHover};
-    }
-    
-    transition: .15s;
-    
-    font-size: 1.125rem;
-    font-weight: bold;
-    font-family: 'Sarala';
-    color: white;
-    text-decoration: none;
-    a {
-    }
-  }
-
-  @media screen and (max-width: 1300px) {
-    text-align: center;
-    flex-direction: column;
-  }
+  padding: 4rem 0;
 `;
 
 export const Chamada = styled.div`
@@ -102,4 +65,30 @@ export const Chamada = styled.div`
       width: 22rem;
     }
   }
+`;
+
+export const MapDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0 10rem;
+  
+  color: white;
+  
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+  }
+  
+  @media screen and (max-width: 768px){
+    padding: 0 3rem;
+  }
+`;
+export const Mapa = styled.iframe`
+  border-radius: 16px;
+  width: 100%;
+  height: 30rem;
 `;
