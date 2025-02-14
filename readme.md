@@ -1,0 +1,1 @@
+O .env desse repositório deve ser preenchido com uma chave de API de um app do google que está armazenado na conta Gmail da Veendauto
