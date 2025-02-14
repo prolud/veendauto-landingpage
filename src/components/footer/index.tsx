@@ -20,7 +20,7 @@ export default function Footer() {
           <h5>Contato</h5>
           <p><strong>Telefone:</strong> +55 41 98472-8328</p>
           <p><strong>Endereço:</strong> Av. Visc. de Guarapuava, 4348 - Batel | Curitiba - PR</p>
-          <p><strong>Email:</strong> <a href="mailto:veendauto@gmail.com" target="_blank">veendauto@gmail.com</a></p>
+          <p><strong>Email:</strong> <a href="mailto:contato@veendauto.com.br" target="_blank">contato@veendauto.com.br</a></p>
         </Textos>
 
         <RedirectIcons>
